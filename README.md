@@ -3,7 +3,7 @@
 ## Cloning the Repository
 
 ```
-$git clone https://github.com/mannamchowdary/DockerWebProject.git
+$git clone https://github.com/sumathipottipati/DockerWebProject.git
 ```
 
 ## Building Docker Image
