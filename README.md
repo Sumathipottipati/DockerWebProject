@@ -3,20 +3,20 @@
 ## Cloning the Repository
 
 ```
-$git clone https://github.com/sumathipottipati/DockerWebProject.git
+$git clone https://github.com/mannamchowdary/DockerWebProject.git
 ```
 
 ## Building Docker Image
 
 ```
 $cd webpage
-$docker build -t sumathireddy/webpage .
+$docker build -t mannam786/webpage .
 ```
 
 ## Running the Container
 
 ```
-$docker run -d -p 80:80 sumathireddy/webpage
+$docker run -d -p 80:80 mannam786/webpage
 ```
 
 ## Jenkinsfile
@@ -35,7 +35,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("sumathireddy/webpage")
+        app = docker.build("mannam786/webpage")
     }
 
     stage('Test image') {
@@ -52,7 +52,7 @@ node {
          * First, the incremental build number from Jenkins
          * Second, the 'latest' tag.
          * Pushing multiple tags is cheap, as all the layers are reused. */
-        docker.withRegistry('https://registry.hub.docker.com/sumathireddy/webpage) {
+        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
         }
