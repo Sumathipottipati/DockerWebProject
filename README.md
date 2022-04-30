@@ -10,7 +10,7 @@ $git clone https://github.com/mannamchowdary/DockerWebProject.git
 
 ```
 $cd webpage
-$docker build -tmannam786/webpage .
+$docker build -t mannam786/webpage .
 ```
 
 ## Running the Container
@@ -35,7 +35,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("sumathireddy/webpage")
+        app = docker.build("mannam786/webpage")
     }
 
     stage('Test image') {
