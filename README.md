@@ -3,20 +3,20 @@
 ## Cloning the Repository
 
 ```
-$git clone https://github.com/sumathipottipati/DockerWebProject.git
+$git clone https://github.com/mannamchowdary/DockerWebProject.git
 ```
 
 ## Building Docker Image
 
 ```
 $cd webpage
-$docker build -tsumathireddy/webpage .
+$docker build -tmannam786/webpage .
 ```
 
 ## Running the Container
 
 ```
-$docker run -d -p 80:80 sumathireddy/webpage
+$docker run -d -p 80:80 mannam786/webpage
 ```
 
 ## Jenkinsfile
